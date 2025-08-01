@@ -2,9 +2,35 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous"
+        />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <p>Weather Today!</p>
+        <div id="main_container">
+            <div id="user_input_container">
+                <input
+                    type="text "
+                    id="input_value"
+                    placeholder="Enter Location"
+                />
+                <button id="button"><i class="fas fa-search"></i></button>
+            </div>
+            <div id="display_container">
+                <h1 id="temp">----°C</h1>
+                <p id="desc">---</p>
+            </div>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
